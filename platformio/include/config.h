@@ -61,12 +61,10 @@
 //   German (Germany)                de_DE
 //   English (United Kingdom)        en_GB
 //   English (United States)         en_US
-//   Estonian (Estonia)              et_EE
-//   Finnish (Finland)               fi_FI
 //   French (France)                 fr_FR
 //   Dutch (Belgium)                 nl_BE
-//   Portuguese (Brazil)             pt_BR
-#define LOCALE en_US
+//   Finnish (Finland)               fi_FI
+#define LOCALE fi_FI
 
 // UNITS
 // Define exactly one macro for each measurement type below.
@@ -75,26 +73,26 @@
 //   Metric   : Celsius
 //   Imperial : Fahrenheit
 // #define UNITS_TEMP_KELVIN
-// #define UNITS_TEMP_CELSIUS
-#define UNITS_TEMP_FAHRENHEIT
+#define UNITS_TEMP_CELSIUS
+// #define UNITS_TEMP_FAHRENHEIT
 
 // UNITS - WIND SPEED
 //   Metric   : Kilometers per Hour
 //   Imperial : Miles per Hour
-// #define UNITS_SPEED_METERSPERSECOND
+#define UNITS_SPEED_METERSPERSECOND
 // #define UNITS_SPEED_FEETPERSECOND
 // #define UNITS_SPEED_KILOMETERSPERHOUR
-#define UNITS_SPEED_MILESPERHOUR
+// #define UNITS_SPEED_MILESPERHOUR
 // #define UNITS_SPEED_KNOTS
 // #define UNITS_SPEED_BEAUFORT
 
 // UNITS - PRESSURE
 //   Metric   : Millibars
 //   Imperial : Inches of Mercury
-// #define UNITS_PRES_HECTOPASCALS
+#define UNITS_PRES_HECTOPASCALS
 // #define UNITS_PRES_PASCALS
 // #define UNITS_PRES_MILLIMETERSOFMERCURY
-#define UNITS_PRES_INCHESOFMERCURY
+// #define UNITS_PRES_INCHESOFMERCURY
 // #define UNITS_PRES_MILLIBARS
 // #define UNITS_PRES_ATMOSPHERES
 // #define UNITS_PRES_GRAMSPERSQUARECENTIMETER
@@ -103,18 +101,30 @@
 // UNITS - VISIBILITY DISTANCE
 //   Metric   : Kilometers
 //   Imperial : Miles
-// #define UNITS_DIST_KILOMETERS
-#define UNITS_DIST_MILES
+#define UNITS_DIST_KILOMETERS
+// #define UNITS_DIST_MILES
 
 // UNITS - PRECIPITATION
 // Measure of precipitation.
 // This can either be Probability of Precipitation (PoP) or hourly volume.
 //   Metric   : Millimeters
 //   Imperial : Inches
-#define UNITS_PRECIP_POP
-// #define UNITS_PRECIP_MILLIMETERS
+// #define UNITS_PRECIP_POP
+#define UNITS_PRECIP_MILLIMETERS
 // #define UNITS_PRECIP_CENTIMETERS
 // #define UNITS_PRECIP_INCHES
+
+// AIR QUALITY INDEX
+// Seemingly every country uses a different scale for Air Quality Index (AQI).
+// I have written a library to calculate many of the most popular AQI scales.
+// Feel free to request the addition of a new AQI scale by opening an Issue.
+// https://github.com/lmarzen/pollutant-concentration-to-aqi
+// Define your preferred AQI scale.
+//   AUSTRALIA_AQI        CANADA_AQHI          EUROPE_CAQI
+//   HONG_KONG_AQHI       INDIA_AQI            MAINLAND_CHINA_AQI
+//   SINGAPORE_PSI        SOUTH_KOREA_CAI      UNITED_KINGDOM_DAQI
+//   UNITED_STATES_AQI
+#define EUROPE_CAQI
 
 // Hypertext Transfer Protocol (HTTP)
 // HTTP
@@ -215,7 +225,7 @@
 //   provides alerts in English only. Any combination of these factors may make
 //   it undesirable to display alerts in some regions.
 //   Disable alerts by changing the DISPLAY_ALERTS macro to 0.
-#define DISPLAY_ALERTS 1
+#define DISPLAY_ALERTS 0
 
 // STATUS BAR EXTRAS
 //   Extra information that can be displayed on the status bar. Set to 1 to
