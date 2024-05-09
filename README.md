@@ -2,14 +2,6 @@
 
 This is a weather display powered by a wifi-enabled ESP32 microcontroller and a 7.5in E-Paper (aka E-ink) display. Current and forecasted weather data is obtained from the OpenWeatherMap API. A sensor provides the display with accurate indoor temperature and humidity.
 
-<p float="left">
-  <img src="showcase/assembled-demo-raleigh-front.jpg" />
-  <img src="showcase/assembled-demo-raleigh-side.jpg" width="49%" />
-  <img src="showcase/assembled-demo-raleigh-back.jpg" width="49%" />
-  <img src="showcase/assembled-demo-bottom-cover.jpg" width="49%" />
-  <img src="showcase/assembled-demo-bottom-cover-removed.jpg" width="49%" />
-</p>
-
 The project draws ~14μA when sleeping and an estimated average of ~83mA during its ~15s wake period. The display can be configured to update as frequently as desired. When the refresh interval is set to 30 minutes, the device will run for >6 months on a single 5000mAh battery. The project displays accurate battery life percentage and can be recharged via a USB-C cable connected to a wall adapter or computer.
 
 There are configuration options for everything from location, time/date formats, units, and language to air quality index scale and hourly outlook graph bounds.
@@ -176,8 +168,6 @@ Cut the low power pad for even longer battery life.
 
 <p float="left">
   <img src="showcase/wiring_diagram_despi-c02.png" width="49%" />
-  <img src="showcase/wiring_diagram_waveshare_rev22.png" width="49%" />
-  <img src="showcase/demo-tucson.jpg" width="32%" />
 </p>
 
 
