@@ -12,7 +12,7 @@ Here are two examples utilizing various configuration options:
 
 <p float="left">
   <img src="showcase/demo-new-york.jpg" width="49%" />
-  <img src="showcase/demo-london.jpg" width="49%" />
+  <img src="showcase/Saanaytto_kayttoliittyma.jpg" width="49%" />
 </p>
 
 
@@ -32,6 +32,10 @@ Here are two examples utilizing various configuration options:
 
 
 ## Setup Guide
+
+<p float="left">
+  <img src="showcase/Saanaytto_koottuna.jpg" width="49%" />
+</p>
 
 ### Hardware
 
@@ -122,14 +126,6 @@ Pin connections are defined in [config.cpp](platformio/src/config.cpp).
 
 If you are using the FireBeetle 2 ESP32-E, you can use the connections I used or change them how you would like.
 
-I have included 2 wiring diagrams. One for the Waveshare HAT rev2.2 and another using the recommended DESPI-C02.
-
-IMPORTANT: The Waveshare E-Paper Driver HAT has two physical switches that MUST be set correctly for the display to work.
-
-- Display Config: Set switch to position B.
-
-- Interface Config: Set switch to position 0.
-
 IMPORTANT: The DESPI-C02 adapter has one physical switch that MUST be set correctly for the display to work.
 
 - RESE: Set switch to position 0.47.
@@ -141,7 +137,7 @@ Cut the low power pad for even longer battery life.
   > Low Power Pad: This pad is specially designed for low power consumption. It is connected by default. You can cut off the thin wire in the middle with a knife to disconnect it. After disconnection, the static power consumption can be reduced by 500 μA. The power consumption can be reduced to 13 μA after controlling the maincontroller enter the sleep mode through the program. Note: when the pad is disconnected, you can only drive RGB LED light via the USB Power supply.
 
 <p float="left">
-  <img src="showcase/wiring_diagram_despi-c02.png" width="49%" />
+  <img src="showcase/Saanaytto_johdotus.jpg" width="49%" />
 </p>
 
 
