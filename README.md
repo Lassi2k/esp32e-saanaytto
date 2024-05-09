@@ -116,32 +116,6 @@ BME280 - Pressure, Temperature, and Humidity Sensor
   > **Warning**
   > The polarity of JST-PH2.0 connectors is not standardized! You may need to swap the order of the wires in the connector.
 
-Stand/Frame
-- You'll want a nice way to show off your project. Here are a few popular choices.
-- DIY Wooden
-  - I made a small stand by hollowing out a piece of wood from the bottom. On the back, I used a short USB extension cable so that I can charge the battery without needing to remove the components from the stand. I also wired a small reset button to refresh the display manually. Additionally, I 3d printed a cover for the bottom, which is held on by magnets. The E-paper screen is very thin, so I used a thin piece of acrylic to support it.
-  - Measurements:
-    - depth = 63mm <br>
-      height = 49mm <br>
-      width = 170.2mm (= width of the screen) <br>
-      screen angle = 80deg <br>
-      screen is 15mm from the front
-- 3D Printable
-  - Here is a list of community designs.
-  
-    | Contributor                                                          | Link                                                                                                     |
-    |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-    | [Francois Allard](https://www.printables.com/@FrAllard_1585397)      | [Printables](https://www.printables.com/model/791477-weather-station-using-a-esp32)                      |
-    | [3D Nate](https://www.printables.com/@3DNate_451157)                 | [Printables](https://www.printables.com/model/661183-e-ink-weather-station-frame)                        |
-    | [Sven F.](https://github.com/Spanholz)                               | [Printables](https://www.printables.com/model/657756-case-for-esp32-weather-station)                     |
-    | [Layers Studio](https://www.printables.com/@LayersStudio)            | [Printables](https://www.printables.com/model/655768-esp32-e-paper-weather-display-stand)                |
-    | [PJ Veltri](https://www.printables.com/@PJVeltri_1590999)            | [Printables](https://www.printables.com/model/692944-base-and-display-holder-for-esp-32-e-paper-weather) |
-    | [TheMeanCanEHdian](https://www.printables.com/@TheMeanCanEH_1207348) | [Printables](https://www.printables.com/model/841458-weather-display-enclosure)                          |
-
-  - If you want to share your own 3D printable designs, your contributions are highly encouraged and welcome!
-- Picture Frame
-
-
 ### Wiring
 
 Pin connections are defined in [config.cpp](platformio/src/config.cpp).
